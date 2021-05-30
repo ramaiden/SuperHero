@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <title>SúperHero</title>
+</head>
+
+<body>
+
+    <!-- Navbar  -->
+    <div class="collapse bg-dark" id="navbarHeader">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-8 col-md-7 py-4">
+                    <h4 class="text-white">Info</h4>
+                    <p class="text-muted">Un superhéroe es un personaje de ficción cuyas características superan las del
+                        héroe clásico, generalmente con poderes sobrehumanos aunque no necesariamente, y entroncado con
+                        la ciencia ficción. Generados a finales de los años 1930 en la industria del comic book
+                        estadounidense, que contribuyeron a levantar,1​han gozado de multitud de adaptaciones a otros
+                        medios, especialmente el cine.</p>
+                </div>
+                <div class="col-sm-4 offset-md-1 py-4">
+                    <h4 class="text-white">Contact</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white">Follow on Twitter</a></li>
+                        <li><a href="#" class="text-white">Like on Facebook</a></li>
+                        <li><a href="#" class="text-white">Email me</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="navbar navbar-dark bg-dark shadow-sm">
+        <div class="container">
+            <a href="#" class="navbar-brand d-flex align-items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor"
+                    stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true" class="me-2"
+                    viewBox="0 0 24 24">
+                    <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z" />
+                    <circle cx="12" cy="13" r="4" />
+                </svg>
+                <strong>Súper Héroes</strong>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader"
+                aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </div>
+    </header>
+    
+    <!-- Header -->
+    <header class="text-center my-5">
+        <h1>SuperHero</h1>
+        <p class="lead">Encuentra tus súperheores</p>
+        <img class="w-100" src="./assets/superheroes-marvel.jpeg" alt="superheroes">
+    </header>
+
+    <!-- Input y botón -->
+    <section>
+        <form>
+            <div class="row w-50 mx-auto my-5">
+                <div class="col-12 col-sm-6"><label>Ingrese el número de tu súperheroe</label></div>
+                <div class="col-12 col-sm-6"><input class="form-control" id="pokemonInput"></div>
+            </div>
+            <button class="btn btn-primary m-auto d-block my-5" data-bs-toggle="collapse"
+                data-bs-target="#collapseExample" aria-expanded="false"
+                aria-controls="collapseExample">Consultar y desplegar</button>
+        </form>
+    </section>
+    <section id="estadis1"></section>
+    
+    <!-- Tarjetas Card y Collapse-->
+    <div class="collapse" id="collapseExample">
+        <!-- Tarjeta Info -->
+        <div class="card card-body">
+            <section id="pokeInfo" class="container mx-auto">
+            </section>
+        <!-- Gráfico -->    
+            <section>
+                <div class="d-block mx-auto" id="poketStats">
+                </div>
+            </section>
+        </div>
+    </div>
+    
+
+    <!-- tabla con listado general -->
+    <table class="container table" style="width: fit-content;">
+        <thead>
+            <tr>
+                <th scope="col">id</th>
+                <th scope="col">Foto</th>
+                <th scope="col">Nombre</th>
+            </tr>
+        </thead>
+        <tbody id="tabla" class="my-lg-5">
+        </tbody>
+    </table>
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+    <script src="./assets/js/index.js"></script>
+</body>
+
+</html>
